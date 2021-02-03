@@ -2,7 +2,7 @@
 
 ## How to contribute
 
-Thanks for contributing to the FIN6 Adversary Emulation Plan!
+Thanks for contributing to the Mapping CVE’s to ATT&CK Techniques for Impact project!
 
 You are welcome to comment on issues, open new issues, and open pull requests.
 
@@ -10,7 +10,7 @@ Pull requests should target the **[develop](https://github.com/center-for-threat
 
 Also, if you contribute any source code, we need you to agree to the following Developer's Certificate of Origin below.
 
-## Reporting issues with emulation procedures
+## Reporting issues
   
 * Describe (in detail) what should have happened. Include any supporting information that may be helpful in resolving the issue.
   
