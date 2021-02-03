@@ -1,12 +1,21 @@
 # Mapping CVE’s to ATT&CK Techniques for Impact
 
-INSERT OVERVIEW HERE 
+This project establishes a methodology and guidance for using MITRE ATT&CK to characterize the impact of a vulnerability as described in the CVE list. ATT&CK techniques provide a standard way of describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders to integrate vulnerabilities into their threat modeling. 
+
+Our goal is to enable vendors, researchers, vulnerability databases, and other producers of vulnerability information to standardize the way they describe the impacts of vulnerabilities. Defenders will be able to use this ATT&CK-based impact information to better inform their risk models. When used with security control frameworks that are mapped to ATT&CK, CVE’s with ATT&CK Technique references should enable defenders to better understand their compensating controls for a given CVE. Ultimately, this methodology aims to establish a critical connection between vulnerability management and threat modeling.
 
 ## Contents
 
+| Resource | Description |
+| ---- | ---- |
+| [Mapping Methodology](/Attack_to_Vulnerability_Mapping_Model.md) | A methodology for mapping MITRE ATT&CK techniques to vulnerabilities. |
+| [Getting Started Guidance](/Getting_Started_with_ATT&CK_with_Vulnerabilties.md) | Guidance for applying the mapping methodology. |
+| [CVE Mappings](/Att&ckToCveMappings.csv) | An initial set of CVEs with ATT&CK mappings |
+| [CVE JSON Schema](/CVE_JSON_5.0.schema) | An extension to the CVE JSON schema that introduces ATT&CK for describing impact.  |
+
 ## Future Work
 
-FILL THIS IN
+Establishing a methodolgy for mapping ATT&CK techniques to CVE is the first step. To realize our goal of establising a connection between vulnerability management and threat modeling, the methodology needs widespread adoption. Users need consistant access to vulnerability information including ATT&CK technique references. The methodology needs widespread adoption by the CVE community. 
 
 ## Questions and Feedback
 
