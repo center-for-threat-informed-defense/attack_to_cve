@@ -17,10 +17,13 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 
 Establishing a methodolgy for mapping ATT&CK techniques to CVE is the first step. To realize our goal of establising a connection between vulnerability management and threat modeling, the methodology needs widespread adoption. Users need consistant access to vulnerability information including ATT&CK technique references. The methodology needs widespread adoption by the CVE community. 
 
-- CVE JSON Schema
-- CVE Mappings
-- CNA Engagenment
+To support widespreadh adoption of this methdology, the following next steps are underway: 
 
+- CVE JSON Schema - ongoing collaboration with the CVE quality working group to secure adoption by the CVE program.
+- CVE Mappings - with adoption of our proposed JSAON schema changes, we will seek to add these initial mappings to the official CVE List. 
+- CNA Engagenment - ongoing engagement with the CNA community to make the case for adoption and collect feedabck. 
+
+We need your help to further make the case for change and we welcome your feedback.
 
 ## Questions and Feedback
 
