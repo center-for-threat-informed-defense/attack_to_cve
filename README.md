@@ -17,6 +17,11 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 
 Establishing a methodolgy for mapping ATT&CK techniques to CVE is the first step. To realize our goal of establising a connection between vulnerability management and threat modeling, the methodology needs widespread adoption. Users need consistant access to vulnerability information including ATT&CK technique references. The methodology needs widespread adoption by the CVE community. 
 
+- CVE JSON Schema
+- CVE Mappings
+- CNA Engagenment
+
+
 ## Questions and Feedback
 
 Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
