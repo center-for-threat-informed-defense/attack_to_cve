@@ -10,7 +10,7 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 | ---- | ---- |
 | [Mapping Methodology](/Attack_to_Vulnerability_Mapping_Model.md) | A methodology for mapping MITRE ATT&CK techniques to vulnerabilities. |
 | [Getting Started Guidance](/Getting_Started_with_ATT&CK_with_Vulnerabilties.md) | Guidance for applying the mapping methodology. |
-| [CVE Mappings](/Att&ckToCveMappings.csv) | An initial set of CVEs with ATT&CK mappings |
+| [CVE Mappings](/Att&ckToCveMappings.csv) | An initial set of CVEs with ATT&CK mappings. |
 | [CVE JSON Schema](/CVE_JSON_5.0.schema) | An extension to the CVE JSON schema that introduces ATT&CK for describing impact.  |
 
 ## Future Work
