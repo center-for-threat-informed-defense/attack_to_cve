@@ -1,4 +1,4 @@
-# Mapping CVE’s to ATT&CK Techniques for Impact
+# Mapping ATT&CK Techniques to CVEs for Impact
 
 This project defines a methodology and guidance for using MITRE ATT&CK to characterize the impact of a vulnerability as described in the CVE list. ATT&CK techniques provide a standard way of describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders to integrate vulnerabilities into their threat modeling. 
 
