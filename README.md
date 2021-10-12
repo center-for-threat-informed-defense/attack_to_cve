@@ -19,7 +19,7 @@ Establishing a methodolgy for mapping ATT&CK techniques to CVE is the first step
 
 To support widespreadh adoption of this methdology, the following next steps are underway: 
 
-- CVE Mappings - with adoption of our proposed JSAON schema changes, we will seek to add these initial mappings to the official CVE List. 
+- CVE Mappings - with adoption of our proposed JSON schema changes, we will seek to add these initial mappings to the official CVE List. 
 - CNA Engagenment - ongoing engagement with the CNA community to make the case for adoption and collect feedabck. 
 
 We need your help to further make the case for change and we welcome your feedback.
