@@ -13,6 +13,12 @@ Costs
 - The 3 levels of adoption let you choose the amount of resources you want to dedicate to the process
 - Based on an 80% accuracy rate, less than 1 minute per CVE spent by our analysts 
 
+# What is ATT&CK?
+
+ATT&CK is a knowledge base of adversary tactics and techniques based on real-world observations. The knowledge base represents adversary goals as tactics and the specific behaviors to achieve those goals as techniques and sub-techniques. Through its global adoption, ATT&CK has become a common taxonomy for both offense and defense to understand and communicate about adversary behaviors. ATT&CK is widely used as a foundation for threat models and a critical input into many cybersecurity disciplines to convey threat intelligence.
+
+ATT&CK is broken down into tactics (the "why") and techniques (the "how").  The tactic is the objective of an attackers and the technique is how the attacker achieves that objective.  In the vulnerability context, tactics and techniques can be used to describe how a vulnerability is eploited and the impacts of the vulnerability.  For example, to exploit a cross-site scripting vulnerability, an attacker might send out emails containing a malicious link ([T1566.002](https://attack.mitre.org/techniques/T1566/002/)).  When a victim clicks on the link, the impact will JavaScript executing in the browser ([T1059.007](https://attack.mitre.org/techniques/T1059/007/)).  From there, the JavaScript can be used for any number of attacks, such as stealing web session cookied ([T1539](https://attack.mitre.org/techniques/T1539/)) or cryptomining ([T1496](https://attack.mitre.org/techniques/T1496/)).
+
 # Why use ATT&CK
 
 ## Vulnerability Report Writers
