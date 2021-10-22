@@ -7,7 +7,7 @@ This project defines a methodology for using MITRE ATT&CK to characterize the im
 
 Our goal is to enable vendors, researchers, vulnerability databases, and other producers of vulnerability information to standardize the way they describe the impacts of vulnerabilities. Defenders will be able to use this ATT&CK-based impact information to better inform their risk models. When used with security control frameworks that are mapped to ATT&CK, CVE’s with ATT&CK Technique references should enable defenders to better understand their compensating controls for a given CVE. Ultimately, this methodology aims to establish a critical connection between vulnerability management and threat modeling.
 
-## Repository Contents
+_This methodology is based on [ATT&CK v9](https://attack.mitre.org/resources/updates/updates-april-2021/index.html)._
 
 | Resource | Description |
 | ---- | ---- |
