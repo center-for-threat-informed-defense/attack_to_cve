@@ -161,11 +161,9 @@ This seciton provides ATT&CK technique mappings based on common functions an att
 | Memory Read (Memory Buffer Errors, Pointer Issues, Type Errors, etc.) | [T1005](https://attack.mitre.org/techniques/T1005) (Data from Local System), [T1499.004](https://attack.mitre.org/techniques/T1499/004) (Endpoint Denial of Service: Application or System Exploitation) | [T1211](https://attack.mitre.org/techniques/T1211) (Exploitation for Defense Evasion), [T1212](https://attack.mitre.org/techniques/T1212) (Exploitation for Credential Access) | May need a sub-technique. |
 
 # Exploitation Techniques
-
 This section provides common mappings for exploit techniques to ATT&CK techniques. Use this list together with the vulnerability type mappings section to determine the appropriate exploitation technique when not specified in the vulnerability type mappings.  This list can also be used independently to determine the appropriate exploitation technique. 
 
 ## Tips for mapping exploitation techniques:
-
 Start by asking, "what steps are necessary to exploit this vulnerability?" 
 
 - If the user executes a malicious file: [T1204.002](https://attack.mitre.org/techniques/T1204/002) (User Execution: Malicious File)
