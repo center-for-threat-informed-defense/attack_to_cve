@@ -40,7 +40,7 @@ ATT&CK also allows defenders to understand how a new vulnerability fits into the
 # Getting Started
 Using ATT&CK in vulnerability records shifts the thinking in how vulnerabilities have traditionally been described.  Rather than focusing on the technical aspects of a vulnerability, ATT&CK focuses the vulnerability record on what the adversary is trying to achieve and how they go about reaching their goal.
 
-If you are not familiar with ATT&CK, incorporating it into your vulnerability records is a daunting task.  To help, this document breaks the task down in to three steps.  Adding ATT&CK to a vulnerability record should take less than a minute.  If it takes longer, consider moving back to an earlier level.
+If you are not familiar with ATT&CK, incorporating it into your vulnerability records is a daunting task.  To help, this document breaks the task down in to three steps.  Adding ATT&CK to a vulnerability record should not take long (5 minutes or less for many most cases). If you find that this process is taking too long, consider moving back to an earlier level.
 
 ## Level 1
 A good place to start is at the tactic level.  Tactics are ATT&CK’s method for representing the goal for taking an action.  For example, an adversary may take one action to achieve credential access and take another action to achieve the goal of privilege escalation.  In ATT&CK, each tactic has a set of techniques an adversary might use to achieve their tactical goal.  However, there are fewer tactics than techniques and they will apply to a larger range of vulnerabilities than an individual technique, so the tactic level is the best place to start.
