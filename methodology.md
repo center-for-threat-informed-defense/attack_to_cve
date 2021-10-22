@@ -1,5 +1,3 @@
-
-
 # Methodology for Mapping MITRE ATT&CK Techniques to Vulnerabilities 
 The number of vulnerabilities reported annually is overwhelming.  Defenders need help processing vulnerability reports and understanding the impact of vulnerabilites on their organization.  Standardizing the data in vulnerability reports makes it easier for defenders to interpret the report quickly and accurately.  It also enables automation since computers have an even harder time understanding the variations in terminology than humans.  This document provides a methodology for using MITRE ATT&CK to characterize the impact of a vulnerability, establishing an approach to standardizing how vulnerability impact is described and helping defenders integrate new vulnerability information into their organizations.  
 
@@ -66,12 +64,14 @@ This method includes the following technique categories:
 
 To find the exploit technique for a vulnerability, use one of the other two mapping methods in this document.
 
-### Mapping
+### Mapping & Methodology Scope
 In each method there are cases where we have not included a mapping for all available catagories (Exploitation Technique, Primary Impact, Secondary Impact). Technique mappings are only included for a catagory when it is likely that different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  
 
 ![/cve-to-attack-no-secondary-impact.png](/cve-to-attack-no-secondary-impact.png)
 
 Some groupings will have more than one technique listed for a mapping category because there are common variations within that grouping.  In these cases, select only the techniques that apply to the vulnerability.  For example, the cross-site scripting (XSS) vulnerability type includes an option of [T1189](https://attack.mitre.org/techniques/T1189) (Drive-by Compromise) or [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link) depending on whether the attacked is stored or not.
+
+This methodology establishes a starting point for vulnerability reporters and researchers to standardize the way they describe some vulnerability data. The methodology does not cover all the ways that systems are exploited.
 
 ### Example
 
@@ -79,9 +79,9 @@ Some groupings will have more than one technique listed for a mapping category b
 
 > Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, The web application improperly protects credentials which could allow an attacker to obtain credentials for remote access to controllers.
 
-To find the appropriate ATT&CK techniques, start by identifying the vulnerability type.  For CVE-2018-17900, the vulnerability is a credential management issue.  Looking through the list of vulnerability types in the methodology, the "General Credential Management Errors" group appears to be the most appropriate.  Using one of the lower-level credential management vulnerability types is preferable but the CVE record does not provide the level of detail need to do so.  
+To find the appropriate ATT&CK techniques, start by identifying the vulnerability type.  For CVE-2018-17900, the vulnerability is a credential management issue.  Looking through the list of vulnerability types in the methodology, the "General Credential Management Errors" vulnerability type appears to be the most appropriate.  Using one of the lower-level credential management vulnerability types is preferable but the CVE record does not provide the level of detail need to do so.  
 
-The ”General Credential Management Errors” vulnerability type map to [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials) for the primary impact and [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) for the secondary impact.  These mappings follow the description in the CVE record.  “improperly protects credentials which could allow an attacker to obtain credentials” matches T1552 and “for remote access to controllers” matches T1078.
+The ”General Credential Management Errors” vulnerability type maps to [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials) for the primary impact and [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) for the secondary impact.  These mappings follow the description in the CVE record.  “improperly protects credentials which could allow an attacker to obtain credentials” matches T1552 and “for remote access to controllers” matches T1078.
 
 The ”General Credential Management Errors” vulnerability type does not have a mapping for the exploitation technique because there are too many ways general credential management vulnerabilities can be exploited.  To find the exploitation technique for CVE-2018-17900, use the Exploit Technique section.  The Exploit Technique section documents a set of scenarios to help the user determine which exploitation technique(s) are appropriate for the vulnerability.  For CVE-2018-17900, the entry point is the web application so the “Attacker exploits remote system application” scenario applies, which makes [T1190](https://attack.mitre.org/techniques/T1190) (Exploit Public-Facing Application) the exploitation technique for the vulnerability.
 
@@ -90,9 +90,6 @@ The description for CVE-2018-17900 can now be re-written using the ATT&CK standa
 ![/cve-2018-17900-mapping-example.png](/cve-2018-17900-mapping-example.png)
 
 > Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, have Unsecure Credentials which could allow an attacker to gain access to Valid Accounts by Exploiting the Public-Facing Application.
-
-##	Limitations
-This methodology establishes a starting point for vulnerability reporters and researchers to standardize the way they describe some vulnerability data. The methodology does not cover all the ways that systems are exploited.
 
 # Tactic-level Techniques
 
