@@ -13,7 +13,7 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 | ---- | ---- |
 | [Getting Started Guide](/getting-started.md) | Start here. This guide makes the case for mapping ATT&CK techniques to vulnerability records and provides guidance for applying the mapping methodology. |
 | [Mapping Methodology](/methodology.md) | The methodology for mapping MITRE ATT&CK techniques to vulnerability records to describe the impact of a vulnerability.  |
-| [CVE Mappings](/Att&ckToCveMappings.csv) | Set of CVEs with ATT&CK mappings created in the process of developing the methodology.  The results of the Phase 1 mappings were used to generate the methodology.  The Phase 2 mappings were created using the methodology.  The mappings categories are defined in the mapping methodology document.  The Phase 1 mappings are uncategorized because they were created before the categories in the methodoly was created. |
+| [CVE Mappings](/Att&ckToCveMappings.csv) | Set of CVEs with ATT&CK mappings created in the process of developing the methodology.  The results of the Phase 1 mappings were used to generate the methodology.  The Phase 2 mappings were created using the methodology.  The mappings categories are defined in the mapping methodology document.  The Phase 1 mappings are uncategorized because they were created before the categories in the methodology was created. |
 | [CVE JSON Schema Extension](https://github.com/CVEProject/cve-schema/pull/6) | An extension to the CVE JSON schema that introduces a taxonomy mapping object that can be used to include ATT&CK for describing impact.  The schema change has been approved by the CVE Program and is waiting for the final release of the new version of the schema. |
 
 ## Future Work
@@ -22,7 +22,7 @@ Creating a methodology for mapping ATT&CK techniques to CVE is the first step. T
 
 To support widespread adoption of this methodology, the following next steps are underway: 
 
-- CVE JSON Schema Revision - our proposed CVE JSON schema changes should be intergrated into the offical CVE JSON Schema in November. 
+- CVE JSON Schema Revision - our proposed CVE JSON schema changes should be integrated into the official CVE JSON Schema in November. 
 - CVE Mappings - with adoption of our proposed JSON schema changes, we aim to add our initial mappings to the official CVE List. 
 - Engagement - ongoing engagement with the CNA community, threat intel teams, and end users to make the case for adoption and collect feedback. 
 
