@@ -67,7 +67,11 @@ This method includes the following technique categories:
 To find the exploit technique for a vulnerability, use one of the other two mapping methods in this document.
 
 ### Mapping
-Just because a method could include mappings for more than one category, does not mean that it will in all instances.  It all depends on how likely different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  Also, some groupings will have more than one technique listed for a mapping category because there are some common variations within that grouping.  In these cases, only the techniques that apply to the vulnerability should be selected.  For example, the cross-site scripting (XSS) group includes an option of [T1189](https://attack.mitre.org/techniques/T1189) (Drive-by Compromise) or [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link) depending on whether the attacked is stored or not.
+In each method there are cases where we have not included a mapping for all available catagories (Exploitation Technique, Primary Impact, Secondary Impact). Technique mappings are only included for a catagory when it is likely that different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  
+
+![/cve-to-attack-no-secondary-impact.png](/cve-to-attack-no-secondary-impact.png)
+
+Some groupings will have more than one technique listed for a mapping category because there are common variations within that grouping.  In these cases, select only the techniques that apply to the vulnerability.  For example, the cross-site scripting (XSS) vulnerability type includes an option of [T1189](https://attack.mitre.org/techniques/T1189) (Drive-by Compromise) or [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link) depending on whether the attacked is stored or not.
 
 ### Example
 
