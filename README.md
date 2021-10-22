@@ -8,10 +8,10 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 
 | Resource | Description |
 | ---- | ---- |
-| [Getting Started Guidance](/Getting_Started_with_ATT&CK_with_Vulnerabilties.md) | Guidance for applying the mapping methodology. |
+| [Getting Started Guide](/Getting_Started_with_ATT&CK_with_Vulnerabilties.md) | Guidance for applying the mapping methodology. |
 | [Mapping Methodology](/Attack_to_Vulnerability_Mapping_Methodology.md) | A methodology for mapping MITRE ATT&CK techniques to vulnerability records to describe the impact of a vulnerability.  |
 | [CVE Mappings](/Att&ckToCveMappings.csv) | Set of CVEs with ATT&CK mappings created in the process of developing the methodology.  The results of the Phase 1 mappings were used to generate the methodology.  The Phase 2 mappings were created using the methodoly.  The mappings categories are defined in the mapping methodology document.  The Phase 1 mappings are uncategorized because they were created before the categories in the methodoly was created. |
-| [CVE JSON Schema](https://github.com/CVEProject/cve-schema/pull/6) | An extension to the CVE JSON schema that introduces a taxonomy mapping object that can be used to include ATT&CK for describing impact.  The schema change has been approved by the CVE Program and is waiting for the final release of the new version of the schema. |
+| [CVE JSON Schema Extension](https://github.com/CVEProject/cve-schema/pull/6) | An extension to the CVE JSON schema that introduces a taxonomy mapping object that can be used to include ATT&CK for describing impact.  The schema change has been approved by the CVE Program and is waiting for the final release of the new version of the schema. |
 
 ## Future Work
 
