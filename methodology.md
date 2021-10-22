@@ -40,7 +40,7 @@ We defined three methods to map ATT&CK techniques to vulnerabilities:
 Only the vulnerability type method has mappings for all three categories.  The functionality method has mappings for primary and secondary impacts and the exploit techniques method (as the name implies) only has mappings for the exploitation technique categories.
 
 #### Vulnerability Type Method
-Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK technique patterns to some of the more common vunerability types.  [CWE-699](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for brevity's sake.
+Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK techniques to some of the more common vulnerability types.  [CWE-699](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for brevity's sake.
 
 The vulnerability type mappings can include the following technique categories:
 1. Exploitation Technique
