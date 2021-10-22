@@ -162,26 +162,28 @@ This seciton provides ATT&CK technique mappings based on common functions an att
 
 # Exploitation Techniques
 
-This section provides common mappings for exploit techniques to ATT&CK techniques. Use this list together with the vulnerability type mappings section to determine the appropriate exploitation technique where applicable. This list can also be used independently to determine the appropriate exploitation technique. 
+This section provides common mappings for exploit techniques to ATT&CK techniques. Use this list together with the vulnerability type mappings section to determine the appropriate exploitation technique when not specified in the vulnerability type mappings.  This list can also be used independently to determine the appropriate exploitation technique. 
 
-Tips for mapping exploitation techniques:
--	What steps are necessary to exploit this vulnerability? 
-- User executes a malicious file: [T1204.002](https://attack.mitre.org/techniques/T1204/002) (User Execution: Malicious File)
+## Tips for mapping exploitation techniques:
+
+Start by asking, "what steps are necessary to exploit this vulnerability?" 
+
+- If the user executes a malicious file: [T1204.002](https://attack.mitre.org/techniques/T1204/002) (User Execution: Malicious File)
   - Where did this file come from?
     - A malicious link: [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link)
     - An email: [T1566.001](https://attack.mitre.org/techniques/T1566/001) (Phishing: Spearphishing Attachment)
     - A third-party service: [T1566.003](https://attack.mitre.org/techniques/T1566/003) (Phishing: Spearphishing via Service)
     - Removable media:  [T1091](https://attack.mitre.org/techniques/T1091) (Replication Through Removable Media)
-- User clicks a malicious link: [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link)
+- If the user clicks a malicious link: [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link)
   - Where did this link come from?
     - An email: [T1566.002](https://attack.mitre.org/techniques/T1566/002) (Phishing: Spearphishing Link)
     - A third-party service: [T1566.003](https://attack.mitre.org/techniques/T1566/003) (Phishing: Spearphishing via Service)
-- User visits a malicious website: [T1189](https://attack.mitre.org/techniques/T1189) (Drive-by Compromise)
-- Attacker exploits remote system application: [T1190](https://attack.mitre.org/techniques/T1190) (Exploit Public-Facing Application)
-- Attacker exploits an external service: [T1133](https://attack.mitre.org/techniques/T1133) (External Remote Services), [T1210](https://attack.mitre.org/techniques/T1210) (Exploitation of Remote Services)
-- Attacker uses valid/default credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
-- Target uses hardcoded credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
-- Attacker "sniffs" unencrypted network traffic: [T1040](https://attack.mitre.org/techniques/T1040) (Network Sniffing)
+- If the user visits a malicious website: [T1189](https://attack.mitre.org/techniques/T1189) (Drive-by Compromise)
+- If the attacker exploits remote system application: [T1190](https://attack.mitre.org/techniques/T1190) (Exploit Public-Facing Application)
+- If the attacker exploits an external service: [T1133](https://attack.mitre.org/techniques/T1133) (External Remote Services), [T1210](https://attack.mitre.org/techniques/T1210) (Exploitation of Remote Services)
+- If the attacker uses valid/default credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
+- If the target uses hardcoded credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
+- If the attacker "sniffs" unencrypted network traffic: [T1040](https://attack.mitre.org/techniques/T1040) (Network Sniffing)
 
 # Examples
 
