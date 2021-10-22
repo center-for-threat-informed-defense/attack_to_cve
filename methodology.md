@@ -191,7 +191,7 @@ Tips for mapping exploitation techniques:
 
 ## CVE-2018-17900
 
-[CVE-2018-17900](https://nvd.nist.gov/vuln/detail/CVE-2018-17900) is about insecure credential handling.  The in "General Credential Management Errors" grouping applies for this vulnerability.  In this case, both mappings in the methodology apply.  The Primary Impact is [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials), when then leads to the Secondary Impact allowing the adversary to use [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts).
+[CVE-2018-17900](https://nvd.nist.gov/vuln/detail/CVE-2018-17900) is about insecure credential handling.  The in "General Credential Management Errors" vulnerability type applies for this vulnerability.  In this case, both mappings in the methodology apply.  The Primary Impact is [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials), when then leads to the Secondary Impact allowing the adversary to use [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts).
 
 ## CVE-2020-11036
 
@@ -199,4 +199,4 @@ Tips for mapping exploitation techniques:
 
 ## CVE-2020-5210
 
-[CVE-2020-5210](https://nvd.nist.gov/vuln/detail/CVE-2020-5210) is a buffer overflow.  Since buffer overflows modify the memory, the "Memory Modification (Memory Buffer Errors, Pointer Issues, Type Errors, etc.)" grouping is used, making the Primary Impacts [T1574](https://attack.mitre.org/techniques/T1574) (Hijack Execution Flow) and [T1499.004](https://attack.mitre.org/techniques/T1499/004) (Endpoint Denial of Service: Application or System Exploitation).  The vulnerability also has an exploitation technique mapping of [T1548.001](https://attack.mitre.org/techniques/T1548/001) (Abuse Elevation Control Mechanism: Setuid and Setgid).  The methodology does not list T1548.001 as an exploitation technique because it is relatively rare.
+[CVE-2020-5210](https://nvd.nist.gov/vuln/detail/CVE-2020-5210) is a buffer overflow.  Since buffer overflows modify the memory, the "Memory Modification (Memory Buffer Errors, Pointer Issues, Type Errors, etc.)" vulnerability type is used, making the Primary Impacts [T1574](https://attack.mitre.org/techniques/T1574) (Hijack Execution Flow) and [T1499.004](https://attack.mitre.org/techniques/T1499/004) (Endpoint Denial of Service: Application or System Exploitation).  The vulnerability also has an exploitation technique mapping of [T1548.001](https://attack.mitre.org/techniques/T1548/001) (Abuse Elevation Control Mechanism: Setuid and Setgid).  The methodology does not list T1548.001 as an exploitation technique because it is relatively rare.
