@@ -32,7 +32,7 @@ We need your help to further make the case for change and we welcome your feedba
 
 Please submit issues for any technical questions/concerns or contact ctid@mitre-engenuity.org directly for more general inquiries.
 
-Also see the guidance for contributors if are interested in [contributing.](/CONTRIBUTING.md)
+Also see the guidance for contributors if you are interested in [contributing.](/CONTRIBUTING.md)
 
 ## Notice
 
