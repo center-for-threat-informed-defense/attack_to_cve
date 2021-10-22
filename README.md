@@ -22,7 +22,7 @@ Creating a methodology for mapping ATT&CK techniques to CVE is the first step. T
 
 To support widespread adoption of this methodology, the following next steps are underway: 
 
-- CVE JSON Schema Revision - our proposed CVE JSON schema changes should be integrated into the official CVE JSON Schema in November. 
+- CVE JSON Schema - our proposed CVE JSON schema extension should be integrated into the official CVE JSON Schema in November 2021. 
 - CVE Mappings - with adoption of our proposed JSON schema changes, we aim to add our initial mappings to the official CVE List. 
 - Engagement - ongoing engagement with the CNA community, threat intel teams, and end users to make the case for adoption and collect feedback. 
 
