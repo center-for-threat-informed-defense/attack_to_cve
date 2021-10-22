@@ -1,4 +1,4 @@
-# Getting Started with Integrating ATT&CK into Vulnerability Management
+# Integrating ATT&CK into Vulnerability Management
 ATT&CK is a powerful tool in threat intelligence and risk management but its utility is not limited to them.  This paper explains how to leverage ATT&CK to improve vulnerability management and provide guidance on how to minimize the cost of integrating ATT&CK into vulnerability data.
 
 Main Benefits
@@ -37,9 +37,11 @@ ATT&CK allows defenders to rapidly assess the risk of and create a mitigation pl
 Defenders can then investigate whether the mitigations they have in place are adequate for addressing the vulnerability or if additional mitigations are needed.  For example, if the exploitation technique is [T1190](https://attack.mitre.org/techniques/T1190) (Exploit Public-Facing Application), the defender should monitor incoming traffic and block malicious requests.  If the defender decides additional mitigations are needed, they can use the mappings from ATT&CK to other resources like [NIST 800-53](https://medium.com/mitre-engenuity/security-control-mappings-a-bridge-to-threat-informed-defense-2e42a074f64a) or the [MITRE Cyber Analytics Repository](https://car.mitre.org/) to  decide which actions to take.   For the [T1574.009](https://attack.mitre.org/techniques/T1574/009) (Hijack Execution Flow: Path Interception by Unquoted Path) example, CAR suggests using [CAR-2013-01-002: Autorun Differences](https://car.mitre.org/analytics/CAR-2013-01-002/) and [CAR-2014-07-001: Service Search Path Interception](https://car.mitre.org/analytics/CAR-2014-07-001/).
 ATT&CK also allows defenders to understand how a new vulnerability fits into the overall risk picture. A plaintext passwords in a log file vulnerability ([T1552.001](https://attack.mitre.org/techniques/T1552/001)) might not be a high priority if the proper access restrictions are in place for the log file.  However, if there is also a vulnerability that allows arbitrary file reads ([T1005](https://attack.mitre.org/techniques/T1005)), then the defenders might want to prioritize addressing the vulnerabilities since the risk of the two combined is greater than individually.
 
-# Getting Started with ATT&CK
+# Getting Started
 Using ATT&CK in vulnerability records shifts the thinking in how vulnerabilities have traditionally been described.  Rather than focusing on the technical aspects of a vulnerability, ATT&CK focuses the vulnerability record on what the adversary is trying to achieve and how they go about reaching their goal.
+
 If you are not familiar with ATT&CK, incorporating it into your vulnerability records is a daunting task.  To help, this document breaks the task down in to three steps.  Adding ATT&CK to a vulnerability record should take less than a minute.  If it takes longer, consider moving back to an earlier level.
+
 ## Level 1
 A good place to start is at the tactic level.  Tactics are ATT&CK’s method for representing the goal for taking an action.  For example, an adversary may take one action to achieve credential access and take another action to achieve the goal of privilege escalation.  In ATT&CK, each tactic has a set of techniques an adversary might use to achieve their tactical goal.  However, there are fewer tactics than techniques and they will apply to a larger range of vulnerabilities than an individual technique, so the tactic level is the best place to start.
 What is more, not all tactics are relevant to vulnerabilities.  For example, the Command and Control tactic is for techniques that adversaries use to communicate with systems under their control.  The adversary may have exploited a vulnerability to gain control of the system but is not likely to need to exploit a vulnerability to send it commands once under its control.  In fact, there are only six tactics that have techniques targeted at exploitation of vulnerabilities. 
@@ -55,7 +57,7 @@ What is more, not all tactics are relevant to vulnerabilities.  For example, the
 
 These tactics map closely with common methods for describing the impact of a vulnerability.  Vulnerability records often use Privilege Escalation or a variation, like gains administrator privileges.  For remote code execution, use the Execution tactic in combination with either Initial Access or Lateral Movement tactic, depending on whether the affected service was public facing.  And most other vulnerability impacts fall within one of these tactics. 
 
-Using ATT&CK does not requires you to provide any more or less information than you normally provide in a vulnerability record.  The advantage of ATT&CK is to standardize how records describe vulnerability information so that readers can leverage the resources built on top of ATT&CK.
+Using ATT&CK does not require you to provide any more or less information than you normally provide in a vulnerability record.  The advantage of ATT&CK is to standardize how records describe vulnerability information so that readers can leverage the resources built on top of ATT&CK.
 
 ## Level 2
 So, you have been using the ATT&CK tactics in your vulnerability records, but they don’t provide the level of detail you need.  How do you go about using the lower-level techniques?
