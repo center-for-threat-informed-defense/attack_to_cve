@@ -1,12 +1,12 @@
 
 
 # Methodology for Mapping MITRE ATT&CK Techniques to Vulnerabilities 
-The number of vulnerabilities being reported is overwhelming.  Defenders need help processing vulnerability reports.  Standardizing the data in vulnerability reports makes it easier for defenders to interpret the report quickly and accurately.  It also enables automation since computers have an even harder time understanding the variations in terminology than humans.  This document provides a methodology that can be used to help standardize the way vulnerabilities are reported by using MITRE ATT&CK.
+The number of vulnerabilities reported annually is overwhelming.  Defenders need help processing vulnerability reports and understanding the impact of vulnerabilites on their organization.  Standardizing the data in vulnerability reports makes it easier for defenders to interpret the report quickly and accurately.  It also enables automation since computers have an even harder time understanding the variations in terminology than humans.  This document provides a methodology for using MITRE ATT&CK to characterize the impact of a vulnerability, establishing an approach to standardizing how vulnerability impact is described and helping defenders integrate new vulnerability information into their organizations.  
 
 ##	What is ATT&CK? 
 [ATT&CK](https://attack.mitre.org/) is a knowledge base of adversary tactics and techniques based on real-world observations. The knowledge base represents adversary goals as tactics and the specific behaviors to achieve those goals as techniques and sub-techniques. Through its global adoption, ATT&CK has become a common taxonomy for both offense and defense to understand and communicate about adversary behaviors. ATT&CK is widely used as a foundation for threat models and a critical input into many cybersecurity disciplines to convey threat intelligence. 
 
-ATT&CK can provide a method for standardizing the language around vulnerabilities. ATT&CK techniques provide a standard way of describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders integrating vulnerabilities into their threat modeling and risk management practices.
+ATT&CK can be used to standardizing the language around vulnerabilities. ATT&CK techniques provide a standard vocabulary for describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders integrating vulnerabilities into their threat modeling and risk management practices.
 
 ## Using ATT&CK to Describe Vulnerabilities
 
@@ -40,7 +40,7 @@ We defined three methods to map ATT&CK techniques to vulnerabilities:
 Only the vulnerability type method has mappings for all three categories.  The functionality method has mappings for primary and secondary impacts and the exploit techniques method (as the name implies) only has mappings for the exploitation technique categories.
 
 #### Vulnerability Type Method
-Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK techniques to some of the more common vulnerability types.  [CWE-699](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for brevity's sake.
+Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK techniques to some of the more common vulnerability types.  [CWE-699 (Software Development)](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000 (Research Concepts)](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for the sake of brevity.
 
 The vulnerability type mappings can include the following technique categories:
 1. Exploitation Technique
@@ -88,7 +88,7 @@ The description for CVE-2018-17900 can now be re-written using the ATT&CK standa
 > Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, have Unsecure Credentials which could allow an attacker to gain access to Valid Accounts by Exploiting the Public-Facing Application.
 
 ##	Limitations
-This methodology establishes a starting point for vulnerability reporters and researchers to standardize the way they describe some vulnerability data. The methodology does not cover all the way systems are exploited.
+This methodology establishes a starting point for vulnerability reporters and researchers to standardize the way they describe some vulnerability data. The methodology does not cover all the ways that systems are exploited.
 
 # Tactic-level Techniques
 
