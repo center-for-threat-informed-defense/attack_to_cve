@@ -30,6 +30,7 @@ We defined three methods to map ATT&CK techniques to vulnerabilities:
 Only the vulnerability type method has mappings for all three categories.  The functionality method has mappings for primary and secondary impacts. The exploit techniques method only has mappings for the exploitation technique categories.
 
 #### Vulnerability Type Method
+
 Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK techniques to some of the more common vulnerability types.  [CWE-699 (Software Development)](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000 (Research Concepts)](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for the sake of brevity.
 
 The vulnerability type mappings can include the following technique categories:
@@ -40,6 +41,7 @@ The vulnerability type mappings can include the following technique categories:
 If one of these categories is not included in the mapping for a particular vulnerability type, use one of the other methods to find the appropriate techniques.
 
 #### Functionality Method
+
 For a vulnerability to be useful, it needs to provide the attacker with a capability they did not have before.  Attackers are often trying to gain access to the same functionality and thus, many vulnerabilities can be grouped by functionality.
 
 This method includes the following technique categories:
@@ -49,6 +51,7 @@ This method includes the following technique categories:
 To find the exploitation technique for a vulnerability, use one of the other two mapping methods in this document.
 
 #### Exploit Technique Method
+
 This method groups techniques by the common steps taken to exploit a vulnerability.  Use this method when a vulnerability type has too many possible exploitation scenarios to list in the Vulnerability Type method.
 
 This method includes the following technique categories:
@@ -57,6 +60,7 @@ This method includes the following technique categories:
 To find the exploit technique for a vulnerability, use one of the other two mapping methods in this document.
 
 ### Mapping & Methodology Scope
+
 In each method there are cases where we have not included a mapping for all available catagories (Exploitation Technique, Primary Impact, Secondary Impact). Technique mappings are only included for a catagory when it is likely that different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  
 
 ![/cve-to-attack-no-secondary-impact.png](/cve-to-attack-no-secondary-impact.png)
@@ -96,7 +100,8 @@ For many tactics within ATT&CK, there is a generic exploitation technique.  When
 | Credential Access | T1212 (Exploitation for Credential Access) |
 | Lateral Movement | T1210 (Exploitation of Remote Services) |
 
-#	Vulnerability type mappings
+# Vulnerability type mappings
+
 The vulnerability type section contains mappings for many of the common vulnerability types.  Mappings for vulnerability types are only included if that type has a common set of techniques used to exploit the vulnerability or that can be executed when the vulnerability is exploited. Each vulnerability type will include a one or more of the following where applicable, a primary and secondary impact and one or more exploitation techniques.
 
 | Vulnerability Type | Primary Impact | Secondary Impact | Exploitation Technique | Notes |
@@ -153,6 +158,7 @@ This seciton provides ATT&CK technique mappings based on common functions an att
 | Memory Read (Memory Buffer Errors, Pointer Issues, Type Errors, etc.) | [T1005](https://attack.mitre.org/techniques/T1005) (Data from Local System), [T1499.004](https://attack.mitre.org/techniques/T1499/004) (Endpoint Denial of Service: Application or System Exploitation) | [T1211](https://attack.mitre.org/techniques/T1211) (Exploitation for Defense Evasion), [T1212](https://attack.mitre.org/techniques/T1212) (Exploitation for Credential Access) | May need a sub-technique. |
 
 # Exploitation Techniques
+
 This section provides common mappings for exploit techniques to ATT&CK techniques. Use this list together with the vulnerability type mappings section to determine the appropriate exploitation technique when not specified in the vulnerability type mappings.  This list can also be used independently to determine the appropriate exploitation technique. 
 
 ## Tips for mapping exploitation techniques:
