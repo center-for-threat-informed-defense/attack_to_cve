@@ -1,14 +1,6 @@
-# Methodology for Mapping MITRE ATT&CK Techniques to Vulnerabilities 
-The number of vulnerabilities reported annually is overwhelming.  Defenders need help processing vulnerability reports and understanding the impact of vulnerabilities on their organization.  Standardizing the data in vulnerability reports makes it easier for defenders to interpret the report quickly and accurately.  It also enables automation since computers have an even harder time understanding the variations in terminology than humans.  This document provides a methodology for using MITRE ATT&CK to characterize the impact of a vulnerability, establishing an approach to standardizing how vulnerability impact is described and helping defenders integrate new vulnerability information into their organizations.  
+# Using MITRE ATT&CK® to Describe Vulnerabilities
 
-##	What is ATT&CK? 
-[ATT&CK](https://attack.mitre.org/) is a knowledge base of adversary tactics and techniques based on real-world observations. The knowledge base represents adversary goals as tactics and the specific behaviors to achieve those goals as techniques and sub-techniques. Through its global adoption, ATT&CK has become a common taxonomy for both offense and defense to understand and communicate about adversary behaviors. ATT&CK is widely used as a foundation for threat models and a critical input into many cybersecurity disciplines to convey threat intelligence. 
-
-ATT&CK can be used to standardize the language around vulnerabilities. ATT&CK techniques provide a standard vocabulary for describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders to integrate vulnerabilities into their threat modeling and risk management practices.
-
-## Using ATT&CK to Describe Vulnerabilities
-
-ATT&CK provides a standard method for describing the exploitation process of a vulnerability.  For example, to exploit a vulnerability where credentials are sent in clear text, the following steps could be used:
+[ATT&CK](https://attack.mitre.org/) tactics and techniques can be as a set of standard terms to describe the exploitation process of a vulnerability.  For example, to exploit a vulnerability where credentials are sent in clear text, the following steps could be used:
 1. Sniff the newtork ([T1040](https://attack.mitre.org/techniques/T1040/))
 2. Which gets you the unsecured credentials ([T1552](https://attack.mitre.org/techniques/T1552/))
 3. Which you can use to access a valid account ([T1078](https://attack.mitre.org/techniques/T1078/))
@@ -26,7 +18,7 @@ Using these three categories, you can create a vulnerability impact description 
 
 ![/cve-to-attack-sentence.png](/cve-to-attack-sentence.png)
 
-Because ATT&CK is written at a higher level of abstraction than is often used to describe a vulnerability and ATT&CK requires examples where the technique has been used in real-world attacks, ATT&CK will not always contain a technique for each of the categories.  For example, the primary impact of a vulnerability may be too low-level to include a technique.  In which case, you can use the secondary impact in place of the primary or use one of the [tactic-level techniques](methodology.md#tactic-level-techniques).
+ATT&CK will not always contain a technique for each of the categories. ATT&CK is written at a higher level of abstraction than is often used to describe a vulnerability and ATT&CK requires examples where the technique has been used in real-world attacks.  For example, the primary impact of a vulnerability may be too low-level to include an ATT&CK technique.  In which case, you can use the secondary impact in place of the primary or use one of the [tactic-level techniques](methodology.md#tactic-level-techniques).
 
 ##	Using the Methodology
 We defined three methods to map ATT&CK techniques to vulnerabilities:
@@ -35,15 +27,15 @@ We defined three methods to map ATT&CK techniques to vulnerabilities:
 -	[**Functionality**](methodology.md#functionality) - This method groups common mappings based on the type of functionality the attacker gains access to by exploiting the vulnerability.
 -	[**Exploit Technique**](methodology.md#exploitation-techniques) – This method groups common mappings depending on the method used to exploit the vulnerability.
 
-Only the vulnerability type method has mappings for all three categories.  The functionality method has mappings for primary and secondary impacts and the exploit techniques method (as the name implies) only has mappings for the exploitation technique categories.
+Only the vulnerability type method has mappings for all three categories.  The functionality method has mappings for primary and secondary impacts. The exploit techniques method only has mappings for the exploitation technique categories.
 
 #### Vulnerability Type Method
 Vulnerabilities that have the same type often also have the same attack steps.  This method maps ATT&CK techniques to some of the more common vulnerability types.  [CWE-699 (Software Development)](https://cwe.mitre.org/data/definitions/699.html) and [CWE-1000 (Research Concepts)](https://cwe.mitre.org/data/definitions/1000.html) were used to select the vulnerability types, though the method sometimes creates its own high-level categories for the sake of brevity.
 
 The vulnerability type mappings can include the following technique categories:
 1. Exploitation Technique
-1. Primary Impact
-1. Secondary Impact
+2. Primary Impact
+3. Secondary Impact
 
 If one of these categories is not included in the mapping for a particular vulnerability type, use one of the other methods to find the appropriate techniques.
 
@@ -52,7 +44,7 @@ For a vulnerability to be useful, it needs to provide the attacker with a capabi
 
 This method includes the following technique categories:
 1. Primary Impact
-1. Secondary Impact
+2. Secondary Impact
 
 To find the exploitation technique for a vulnerability, use one of the other two mapping methods in this document.
 
