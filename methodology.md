@@ -4,7 +4,7 @@ The number of vulnerabilities reported annually is overwhelming.  Defenders need
 ##	What is ATT&CK? 
 [ATT&CK](https://attack.mitre.org/) is a knowledge base of adversary tactics and techniques based on real-world observations. The knowledge base represents adversary goals as tactics and the specific behaviors to achieve those goals as techniques and sub-techniques. Through its global adoption, ATT&CK has become a common taxonomy for both offense and defense to understand and communicate about adversary behaviors. ATT&CK is widely used as a foundation for threat models and a critical input into many cybersecurity disciplines to convey threat intelligence. 
 
-ATT&CK can be used to standardizing the language around vulnerabilities. ATT&CK techniques provide a standard vocabulary for describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders integrating vulnerabilities into their threat modeling and risk management practices.
+ATT&CK can be used to standardize the language around vulnerabilities. ATT&CK techniques provide a standard vocabulary for describing the methods adversaries use to exploit a vulnerability and what adversaries hope to achieve by exploiting the vulnerability. Using ATT&CK techniques to describe a vulnerability makes it easier for defenders to integrate vulnerabilities into their threat modeling and risk management practices.
 
 ## Using ATT&CK to Describe Vulnerabilities
 
