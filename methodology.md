@@ -1,6 +1,6 @@
 # Using MITRE ATT&CK® to Describe Vulnerabilities
 
-[ATT&CK](https://attack.mitre.org/) tactics and techniques can be as a set of standard terms to describe the exploitation process of a vulnerability.  For example, to exploit a vulnerability where credentials are sent in clear text, the following steps could be used:
+[ATT&CK](https://attack.mitre.org/) tactics and techniques can be used as a set of standard terms to describe the exploitation process of a vulnerability.  For example, to exploit a vulnerability where credentials are sent in clear text, the following steps could be used:
 1. Sniff the network ([T1040](https://attack.mitre.org/techniques/T1040/))
 2. Which gets you the unsecured credentials ([T1552](https://attack.mitre.org/techniques/T1552/))
 3. Which you can use to access a valid account ([T1078](https://attack.mitre.org/techniques/T1078/))
