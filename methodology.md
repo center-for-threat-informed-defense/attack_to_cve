@@ -61,7 +61,7 @@ To find the exploit technique for a vulnerability, use one of the other two mapp
 
 ### Mapping & Methodology Scope
 
-In each method there are cases where we have not included a mapping for all available catagories (Exploitation Technique, Primary Impact, Secondary Impact). Technique mappings are only included for a catagory when it is likely that different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  
+In each method there are cases where we have not included a mapping for all available categories (Exploitation Technique, Primary Impact, Secondary Impact). Technique mappings are only included for a category when it is likely that different vulnerabilities in the group share that technique.  For example, vulnerabilities that modify memory (e.g., buffer overflows) share a common primary impact, but the secondary impacts and exploitation techniques are so varied that the methodology does not include a mapping for those categories.  
 
 ![/cve-to-attack-no-secondary-impact.png](/cve-to-attack-no-secondary-impact.png)
 
@@ -129,14 +129,14 @@ The vulnerability type section contains mappings for many of the common vulnerab
 | Unrestricted File Upload | [T1505.003](https://attack.mitre.org/techniques/T1505/003) (Server Software Component: Web Shell) | [T1059](https://attack.mitre.org/techniques/T1059) (Command and Scripting Interpreter) | N/A |  |
 | Deserialization of Untrusted Data | [T1059](https://attack.mitre.org/techniques/T1059) (Command and Scripting Interpreter) | N/A | N/A |  |
 | Infinite Loop | [T1499.004](https://attack.mitre.org/techniques/T1499/004) (Endpoint Denial of Service: Application or System Exploitation) | N/A | N/A |  |
-| Cross-site Request Forgery (CSRF) | [T1068](https://attack.mitre.org/techniques/T1068) (Exploitation for Privilege Escalation) | Depends on the functionality the vulnerability gives access to.  See [See the Functionality Section](methodology.md#functionality) for guidance on which techniques are appropriate. | [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link) |  |
+| Cross-site Request Forgery (CSRF) | [T1068](https://attack.mitre.org/techniques/T1068) (Exploitation for Privilege Escalation) | Depends on the functionality the vulnerability gives access to.  See the [Functionality Section](methodology.md#functionality) for guidance on which techniques are appropriate. | [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link) |  |
 | Session Fixation | [T1563](https://attack.mitre.org/techniques/T1563) (Remote Service Session Hijacking) | N/A | N/A | Often can be used for Initial Access. |
 | Uncontrolled Resource Consumption | [T1499](https://attack.mitre.org/techniques/T1499) (Endpoint Denial of Service) | N/A | N/A | A sub-technique may be chosen depending on the type of resource being consumed |
 | Server-Side Request Forgery (SSRF) | [T1090](https://attack.mitre.org/techniques/T1090) (Proxy) | [T1135](https://attack.mitre.org/techniques/T1135) (Network Discovery), [T1005](https://attack.mitre.org/techniques/T1005) (Data from Local System) | [T1133](https://attack.mitre.org/techniques/T1133) (External Remote Service) | Tactic/Technique mismatch for the primary impact. |
 
 # Functionality
 
-This seciton provides ATT&CK technique mappings based on common functions an attacker may be trying to gain access to.
+This section provides ATT&CK technique mappings based on common functions an attacker may be trying to gain access to.
 
 | Functionality | Primary Impact | Secondary Impact | Notes |
 | --- | --- | --- | --- |
