@@ -87,19 +87,6 @@ The description for CVE-2018-17900 can now be re-written using the ATT&CK standa
 
 > Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, have Unsecure Credentials which could allow an attacker to gain access to Valid Accounts by Exploiting the Public-Facing Application.
 
-# Tactic-level Techniques
-
-For many tactics within ATT&CK, there is a generic exploitation technique.  When mapping techniques to vulnerabilities, exploitation can be assumed so these techniques are not as useful in this context than for other uses of ATT&CK.  In this document, where possible, a more specific technique is used over the generic exploitation techniques. 
-
-| Tactic | Generic Exploitation Technique |
-| ---- | ---- |
-| Initial Access | T1190 (Exploit Public-Facing Application) |
-| Execution | T1203 (Exploitation of Client Execution) |
-| Privilege Escalation | T1068 (Exploitation for Privilege Escalation) |
-| Defense Evasion | T1211 (Exploitation for Defense Evasion) |
-| Credential Access | T1212 (Exploitation for Credential Access) |
-| Lateral Movement | T1210 (Exploitation of Remote Services) |
-
 # Vulnerability type mappings
 
 The vulnerability type section contains mappings for many of the common vulnerability types.  Mappings for vulnerability types are only included if that type has a common set of techniques used to exploit the vulnerability or that can be executed when the vulnerability is exploited. Each vulnerability type will include a one or more of the following where applicable, a primary and secondary impact and one or more exploitation techniques.
@@ -180,6 +167,19 @@ Start by asking, "what steps are necessary to exploit this vulnerability?"
 - If the attacker uses valid/default credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
 - If the target uses hardcoded credentials: [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts)
 - If the attacker "sniffs" unencrypted network traffic: [T1040](https://attack.mitre.org/techniques/T1040) (Network Sniffing)
+
+# Tactic-level Techniques
+
+When the three methods above (Vulnerability Type, Functionality, and Exploit Technique) don't support mapping the exploit type or impacts of a vulnerability, consider focusing at a higher level in ATT&CK. For many tactics within ATT&CK, there is a generic exploitation technique.  When mapping techniques to vulnerabilities, exploitation can be assumed so these techniques are not as useful in this context than for other uses of ATT&CK.  In this document, where possible, a more specific technique is used over the generic exploitation techniques. 
+
+| Tactic | Generic Exploitation Technique |
+| ---- | ---- |
+| Initial Access | T1190 (Exploit Public-Facing Application) |
+| Execution | T1203 (Exploitation of Client Execution) |
+| Privilege Escalation | T1068 (Exploitation for Privilege Escalation) |
+| Defense Evasion | T1211 (Exploitation for Defense Evasion) |
+| Credential Access | T1212 (Exploitation for Credential Access) |
+| Lateral Movement | T1210 (Exploitation of Remote Services) |
 
 # Examples
 
