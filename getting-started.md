@@ -1,5 +1,5 @@
 # Integrating ATT&CK into Vulnerability Management
-ATT&CK is a powerful tool in threat intelligence and risk management but its utility is not limited to them.  This paper explains how to leverage ATT&CK to improve vulnerability management and provide guidance on how to minimize the cost of integrating ATT&CK into vulnerability information.
+ATT&CK is a powerful tool in threat intelligence and risk management but its utility is not limited to them.  This paper explains how to leverage ATT&CK to improve vulnerability management and provides guidance on how to minimize the cost of integrating ATT&CK into vulnerability information.
 
 Main Benefits
 
