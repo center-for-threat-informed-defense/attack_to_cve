@@ -2,7 +2,7 @@
 
 ## How to contribute
 
-Thanks for contributing to the Mapping CVE’s to ATT&CK Techniques for Impact project!
+Thanks for contributing to the Mapping ATT&CK Techniques to CVEs for Impact project!
 
 You are welcome to comment on issues, open new issues, and open pull requests.
 
