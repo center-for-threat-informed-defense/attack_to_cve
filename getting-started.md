@@ -1,22 +1,24 @@
 # Getting Started
+
 Using ATT&CK in vulnerability records shifts the thinking in how vulnerabilities have traditionally been described.  Rather than focusing on the technical aspects of a vulnerability, ATT&CK focuses the vulnerability record on what the adversary is trying to achieve and how they go about reaching their goal.
 
 If you are not familiar with ATT&CK, incorporating it into your vulnerability records is a daunting task.  To help, this document breaks the task down in to three levels.  Adding ATT&CK to a vulnerability record should not take long (5 minutes or less for most cases). If you find that this process is taking too long, consider moving back to an earlier level.
 
 ## Level 1 - Focus on ATT&CK's tactics
+
 A good place to start is at the tactic level.  Tactics are ATT&CK’s method for representing the goal for taking an action.  For example, an adversary may take one action to achieve credential access and take another action to achieve the goal of privilege escalation.  In ATT&CK, each tactic has a set of techniques an adversary might use to achieve their tactical goal.  However, there are fewer tactics than techniques and they will apply to a larger range of vulnerabilities than an individual technique, so the tactic level is the best place to start.
 
 What is more, not all tactics are relevant to vulnerabilities.  For example, the Command and Control tactic is for techniques that adversaries use to communicate with systems under their control.  The adversary may have exploited a vulnerability to gain control of the system but is not likely to need to exploit a vulnerability to send it commands once under its control.  In fact, there are only six tactics that have techniques targeted at exploitation of vulnerabilities. 
 
 These tactics map closely with common methods for describing the impact of a vulnerability.  Vulnerability records often use Privilege Escalation or a variation, like gains administrator privileges.  For remote code execution, use the Execution tactic in combination with either Initial Access or Lateral Movement tactic, depending on whether the affected service was public facing.  And most other vulnerability impacts fall within one of these tactics. 
 
-The [Tactic-level Techniques](methodology.md#tactic-level-techniques) section in the methodology lists the generic exploitation techniques for each tacitc in ATT&CK tactic. 
+The [Tactic-level Techniques](methodology.md#tactic-level-techniques) section in the methodology lists the generic exploitation techniques for each tactic in ATT&CK tactic. 
 
 Using ATT&CK does not require you to provide any more or less information than you normally provide in a vulnerability record.  The advantage of ATT&CK is to standardize how records describe vulnerability information so that readers can leverage the resources built on top of ATT&CK.
 
 ## Level 2 - Expand, one tactic at a time
 
-If focusing on ATT&CK tactics in your vulnerability records doesn’t provide the level of detail you need. Condsider using the [vulnerability type mappings](methodology.md#vulnerability-type-mappings), but limiting your focus to just one or two tactics at a time. 
+If focusing on ATT&CK tactics in your vulnerability records doesn’t provide the level of detail you need. Consider using the [vulnerability type mappings](methodology.md#vulnerability-type-mappings), but limiting your focus to just one or two tactics at a time. 
 
 Focus on integrating techniques from one tactic at a time, starting with the tactic you care about the most.  For example, a vendor of an office suite may want to focus on the Execution tactic.  Searching through the techniques for the Execution tactic, they find that the [T1204.001](https://attack.mitre.org/techniques/T1204/001) (User Execution: Malicious Link), [T1204.002](https://attack.mitre.org/techniques/T1204/002) (User Execution: Malicious File), and [T1059](https://attack.mitre.org/techniques/T1059) (Command and Scripting Interpreter) techniques apply to most of the vulnerabilities in their product.  
 
