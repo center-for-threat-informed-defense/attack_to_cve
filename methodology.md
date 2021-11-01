@@ -77,7 +77,7 @@ This methodology establishes a starting point for vulnerability reporters and re
 
 To find the appropriate ATT&CK techniques, start by identifying the vulnerability type.  For CVE-2018-17900, the vulnerability is a credential management issue.  Looking through the list of vulnerability types in the methodology, the "General Credential Management Errors" vulnerability type appears to be the most appropriate.  Using one of the lower-level credential management vulnerability types is preferable but the CVE record does not provide the level of detail need to do so.  
 
-The ”General Credential Management Errors” vulnerability type maps to [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials) for the primary impact and [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) for the secondary impact.  These mappings follow the description in the CVE record.  “improperly protects credentials which could allow an attacker to obtain credentials” matches T1552 and “for remote access to controllers” matches T1078.
+The ”General Credential Management Errors” vulnerability type maps to [T1552](https://attack.mitre.org/techniques/T1552) (Unsecured Credentials) for the primary impact and [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) for the secondary impact.  These mappings follow the description in the CVE record.  “improperly protects credentials which could allow an attacker to obtain credentials” matches T1552 and “for remote access to controllers” matches T1078.
 
 The ”General Credential Management Errors” vulnerability type does not have a mapping for the exploitation technique because there are too many ways general credential management vulnerabilities can be exploited.  To find the exploitation technique for CVE-2018-17900, use the Exploit Technique section.  The Exploit Technique section documents a set of scenarios to help the user determine which exploitation technique(s) are appropriate for the vulnerability.  For CVE-2018-17900, the entry point is the web application so the “Attacker exploits remote system application” scenario applies, which makes [T1190](https://attack.mitre.org/techniques/T1190) (Exploit Public-Facing Application) the exploitation technique for the vulnerability.
 
@@ -85,7 +85,7 @@ The description for CVE-2018-17900 can now be re-written using the ATT&CK standa
 
 ![/cve-2018-17900-mapping-example.png](/cve-2018-17900-mapping-example.png)
 
-> Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, have Unsecure Credentials which could allow an attacker to gain access to Valid Accounts by Exploiting the Public-Facing Application.
+> Yokogawa STARDOM Controllers FCJ, FCN-100, FCN-RTU, FCN-500, All versions R4.10 and prior, have Unsecured Credentials which could allow an attacker to gain access to Valid Accounts by Exploiting the Public-Facing Application.
 
 # Vulnerability type mappings
 
@@ -98,7 +98,7 @@ The vulnerability type section contains mappings for many of the common vulnerab
 | Improper Restriction of Excessive Authentication Attempts | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) | N/A | [T1110.001](https://attack.mitre.org/techniques/T1110/001) (Brute Force: Password Guessing) |  |
 | Overly Restrictive Account Lockout Mechanism | <ul><li>Mobile - [T1446](https://attack.mitre.org/techniques/T1446) (Device Lockout)</li><li>Others – [T1531](https://attack.mitre.org/techniques/T1531) (Account Access Removal)</li></ul> | N/A | [T1110](https://attack.mitre.org/techniques/T1110) (Brute Force) |  |
 | Use of Password Hash Instead of Password for Authentication | [T1550.002](https://attack.mitre.org/techniques/T1550/002) (Use Alternate Authentication Material: Pass the Hash) | N/A | N/A |  |
-| General Credential Management Errors | [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials) | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) | N/A | A sub-technique can be chosen where applicable. |
+| General Credential Management Errors | [T1552](https://attack.mitre.org/techniques/T1552) (Unsecured Credentials) | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) | N/A | A sub-technique can be chosen where applicable. |
 | Cleartext Transmission of Sensitive Information | [T1552](https://attack.mitre.org/techniques/T1552) (Unsecured Credentials) | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) | [T1040](https://attack.mitre.org/techniques/T1040) (Network Sniffing) | A sub-technique can be chosen where applicable. |
 | Hard-coded Credentials | [T1078.001](https://attack.mitre.org/techniques/T1078/001) (Default Accounts) | N/A | N/A |  |
 | Weak Password/Hashing | N/A | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) | [T1110](https://attack.mitre.org/techniques/T1110) (Brute Force) |  |
@@ -189,7 +189,7 @@ When the three methods above (Vulnerability Type, Functionality, and Exploit Tec
 
 ## CVE-2018-17900
 
-[CVE-2018-17900](https://nvd.nist.gov/vuln/detail/CVE-2018-17900) is about insecure credential handling.  The in "General Credential Management Errors" vulnerability type applies for this vulnerability.  In this case, both mappings in the methodology apply.  The Primary Impact is [T1552](https://attack.mitre.org/techniques/T1552) (Unsecure Credentials), when then leads to the Secondary Impact allowing the adversary to use [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts).
+[CVE-2018-17900](https://nvd.nist.gov/vuln/detail/CVE-2018-17900) is about insecure credential handling.  The in "General Credential Management Errors" vulnerability type applies for this vulnerability.  In this case, both mappings in the methodology apply.  The Primary Impact is [T1552](https://attack.mitre.org/techniques/T1552) (Unsecured Credentials), when then leads to the Secondary Impact allowing the adversary to use [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts).
 
 ## CVE-2020-11036
 
