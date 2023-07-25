@@ -131,7 +131,6 @@ This section provides ATT&CK technique mappings based on common functions an att
 | Create Account | [T1136](https://attack.mitre.org/techniques/T1136) (Create Account) | [T1078](https://attack.mitre.org/techniques/T1078) (Valid Accounts) |  |
 | Disable protections | [T1562](https://attack.mitre.org/techniques/T1562) (Impair Defenses) | N/A |  |
 | Restart/Reboot | [T1529](https://attack.mitre.org/techniques/T1529) (System Shutdown/Reboot) | N/A |  |
-| Install App | [T1476](https://attack.mitre.org/techniques/T1476) (Deliver Malicious App via Other Means) | N/A |  |
 | Read from Memory | [T1005](https://attack.mitre.org/techniques/T1005) (Data from Local System) | N/A |  |
 | Obtain sensitive information: Credentials | [T1552](https://attack.mitre.org/techniques/T1552) (Unsecured Credentials) | N/A |  |
 | Obtain sensitive information: Other data | [T1005](https://attack.mitre.org/techniques/T1005) (Data from Local System) | N/A |  |
