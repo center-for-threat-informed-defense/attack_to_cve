@@ -15,7 +15,7 @@ Our goal is to enable vendors, researchers, vulnerability databases, and other p
 | [CVE JSON Schema Extension](https://github.com/CVEProject/cve-schema/pull/6) | An extension to the CVE JSON schema that introduces a taxonomy mapping object that can be used to include ATT&CK for describing impact.  The schema change has been approved by the CVE Program and is waiting for the final release of the new version of the schema. |
 
 
-_This methodology is based on [ATT&CK v9](https://attack.mitre.org/resources/updates/updates-april-2021/index.html)._
+_This methodology was originally based on [ATT&CK v9](https://attack.mitre.org/resources/updates/updates-april-2021/index.html) and has been updated for [ATT&CK v13.1](https://attack.mitre.org/resources/updates/updates-april-2023/index.html)._
 
 ## How does this help vulnerability report authors?
 
